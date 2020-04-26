@@ -12,7 +12,7 @@ This project is aimed at scraping Tweets on a search, where scrolling is needed 
 ## Background
 
 
-This is a relatively Python 3 simple application, based on existing scripts, which are included in the [research](/research) directory.
+This is a relatively Python 3 simple application, based on existing scripts, which are included in the [research](/research) directory. See also [gist](https://gist.github.com/artjomb/07209e859f9bf0206f76).
 
 The goal is to get all the Twitter tweets for a search result, going back as far as possible. Using the Twitter API is restrictive - it only gives a week worth of data. Note that to keep this application simple, only the tweet ID needs to be stored and none of the tweet or author data. As once you have a tweet ID no matter how old, you can use the Twitter API to get the tweet and author data for it.
 
