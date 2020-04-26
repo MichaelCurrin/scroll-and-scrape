@@ -8,7 +8,7 @@ from selenium import webdriver
 import params
 
 
-browser = webdriver.Chrome()
+BROWSER = webdriver.Chrome()
 
 MAX_STOPS = 3
 
@@ -17,7 +17,7 @@ def scroll(url):
     """
     Scroll through HTML for given url.
 
-    Stop scrolling since height has not increased since last scroll.
+    Stop scrolling if height has not increased since last scroll.
     This might also mean that the connection has stopped and the script is
     not aware of the connection error.
 
@@ -25,18 +25,16 @@ def scroll(url):
     check again a few times, to check we are really at the end. Reset the count
     whenever we have scrolled successfully.
     """
-    global browser
-
-    browser.get(url)
+    BROWSER.get(url)
     time.sleep(2)
 
-    current_height = browser.execute_script("return document.body.scrollHeight")
+    current_height = BROWSER.execute_script("return document.body.scrollHeight")
 
     stops = 0
     while True:
-        browser.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+        BROWSER.execute_script("window.scrollTo(0, document.body.scrollHeight);")
         time.sleep(2)
-        new_height = browser.execute_script("return document.body.scrollHeight")
+        new_height = BROWSER.execute_script("return document.body.scrollHeight")
         if new_height == current_height:
             stops += 1
             if stops == MAX_STOPS:
@@ -54,7 +52,7 @@ def main():
     """
     scroll(params.url)
 
-    tweets = browser.find_elements_by_class_name("tweet")
+    tweets = BROWSER.find_elements_by_class_name("tweet")
 
     tweet = None
     for tweet in tweets:
@@ -69,7 +67,7 @@ def main():
     else:
         print("No")
 
-    browser.quit()
+    BROWSER.quit()
 
 
 if __name__ == "__main__":
