@@ -1,0 +1,13 @@
+{
+        "terminal.integrated.cwd": "scrollscrape",
+        "code-runner.cwd": "scrollscrape",
+        "python.pythonPath": "venv/bin/python",
+
+        "editor.rulers": [79],
+
+        "python.formatting.provider": "black",
+
+        "python.linting.enabled": true,
+        "python.linting.pylintEnabled": true,
+        "python.linting.flake8Enabled": true,
+}
