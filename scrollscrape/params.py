@@ -18,7 +18,7 @@ import urllib.parse
 
 text_query = '("MamaCity Improv" OR #MCIF2016 OR #MCIF2017 OR #MCIF2018 OR MamaCityImprovFest OR MamaCityIF OR mamacityimprovfestival.nutickets.co.za OR mamacityimprovfest.com) -MusicCityIrish -Ireland -Irish -MusicCity -nashville -Keeffe'
 # Convert characters to be websafe. In particular spaces and punctuation, but keep brackets.
-encoded_query = urllib.parse.quote(text_query, safe='()')
+encoded_query = urllib.parse.quote(text_query, safe="()")
 
-base_url = 'https://twitter.com/search?f=tweets&q='
+base_url = "https://twitter.com/search?f=tweets&q="
 url = "{}{}".format(base_url, encoded_query)

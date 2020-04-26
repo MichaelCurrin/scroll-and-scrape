@@ -12,36 +12,36 @@ from selenium.webdriver.common.keys import Keys
 
 
 browser = webdriver.Chrome()
-base_url = 'https://twitter.com/search?f=tweets&q='
-query = '%40mamacityif'
+base_url = "https://twitter.com/search?f=tweets&q="
+query = "%40mamacityif"
 url = "{}{}".format(base_url, query)
 
 
 browser.get(url)
 time.sleep(1)
 
-body = browser.find_element_by_tag_name('body')
+body = browser.find_element_by_tag_name("body")
 
 for _ in range(50):
     body.send_keys(Keys.PAGE_DOWN)
     time.sleep(0.2)
 
-tweets = browser.find_elements_by_class_name('tweet-text')
+tweets = browser.find_elements_by_class_name("tweet-text")
 for tweet in tweets:
     print(tweet.text)
 
 # Twitter API data is stored in a tweet tag and not used directly in the
 # output for the user.
-tweets = browser.find_elements_by_class_name('tweet')
+tweets = browser.find_elements_by_class_name("tweet")
 
 for tweet in tweets:
-    t = tweet.find_element_by_class_name('_timestamp')
-    id_ = tweet.get_attribute('data-tweet-id')
-    path = tweet.get_attribute('data-permalink-path')
-    screen_name = tweet.get_attribute('data-screen-name')
+    t = tweet.find_element_by_class_name("_timestamp")
+    id_ = tweet.get_attribute("data-tweet-id")
+    path = tweet.get_attribute("data-permalink-path")
+    screen_name = tweet.get_attribute("data-screen-name")
     print(t.text, screen_name, id_, path)
 
-    msg = tweet.find_element_by_class_name('TweetTextSize')
+    msg = tweet.find_element_by_class_name("TweetTextSize")
     text = msg.text
     print(text)
 

@@ -54,17 +54,17 @@ def main():
     """
     scroll(params.url)
 
-    tweets = browser.find_elements_by_class_name('tweet')
+    tweets = browser.find_elements_by_class_name("tweet")
 
     tweet = None
     for tweet in tweets:
-        tweet_id = tweet.get_attribute('data-tweet-id')
+        tweet_id = tweet.get_attribute("data-tweet-id")
         print(tweet_id, end=" ")
     print()
 
     print("Count: {}".format(len(tweets)))
     if tweet:
-        tweet_time = tweet.find_element_by_class_name('_timestamp').text
+        tweet_time = tweet.find_element_by_class_name("_timestamp").text
         print("Oldest tweet: {}".format(tweet_time))
     else:
         print("No")
@@ -72,5 +72,5 @@ def main():
     browser.quit()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
