@@ -6,12 +6,7 @@
 
 This application uses Python and the browser (controlled through Selenium) to load a page and scrape the contents and save the data. The approach here loads the DOM (not possible when using plain HTTP request) and also adds in waiting and scrolling logic so that dynamic elements can be pulled in.
 
-This project is aimed at scraping Tweets in a feed, where scrolling is needed to load more. Also, the Twitter Search API has a limit of up to a week, so by using the browser we can get older tweets.
-
-
-## Requirements
-
-- Python >= 3.6
+This project is aimed at scraping Tweets on a search, where scrolling is needed to load more. It could be used for a user timeline though.
 
 
 ## Background
@@ -20,6 +15,11 @@ This project is aimed at scraping Tweets in a feed, where scrolling is needed to
 This is a relatively Python 3 simple application, based on existing scripts, which are included in the [research](/research) directory.
 
 The goal is to get all the Twitter tweets for a search result, going back as far as possible. Using the Twitter API is restrictive - it only gives a week worth of data. Note that to keep this application simple, only the tweet ID needs to be stored and none of the tweet or author data. As once you have a tweet ID no matter how old, you can use the Twitter API to get the tweet and author data for it.
+
+
+## Requirements
+
+- Python >= 3.6
 
 
 ## Future development
