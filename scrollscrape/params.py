@@ -1,7 +1,8 @@
 """
 Params module.
 
-Values to use in search. For now this is hardcoded to searches for the MamaCity Improv Festival.
+Values to use in search. For now this is hardcoded to searches for the MamaCity
+Improv Festival.
 """
 import urllib.parse
 
@@ -21,4 +22,4 @@ text_query = '("MamaCity Improv" OR #MCIF2016 OR #MCIF2017 OR #MCIF2018 OR MamaC
 encoded_query = urllib.parse.quote(text_query, safe="()")
 
 base_url = "https://twitter.com/search?f=tweets&q="
-url = "{}{}".format(base_url, encoded_query)
+url = f"{base_url}{encoded_query}"
