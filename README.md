@@ -1,5 +1,5 @@
 # Scroll and Scrape
-> Find and store tweet data from Twitter search results, using Python and Selenium
+> Store tweets from a Twitter search results, using browser scraping
 
 [![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/scroll-and-scrape?include_prereleases=&sort=semver)](https://github.com/MichaelCurrin/scroll-and-scrape/releases/)
 [![License](https://img.shields.io/badge/License-MIT-blue)](#license)
