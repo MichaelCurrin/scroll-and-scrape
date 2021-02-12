@@ -1,6 +1,12 @@
 # Scroll and Scrape
 > Find and store tweet data from Twitter search results, using Python and Selenium
 
+[![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/scroll-and-scrape?include_prereleases=&sort=semver)](https://github.com/MichaelCurrin/scroll-and-scrape/releases/)
+[![License](https://img.shields.io/badge/License-MIT-blue)](#license)
+
+[![Made with Python](https://img.shields.io/badge/Python->%3D3.6-blue?logo=python&logoColor=white)](https://python.org)
+[![dependency - selenium](https://img.shields.io/badge/dependency-selenium-blue)](https://pypi.org/project/selenium)
+
 
 ## Purpose
 
@@ -19,7 +25,7 @@ The goal is to get all the Twitter tweets for a search result, going back as far
 
 ## Requirements
 
-- Python >= 3.6
+- Python
 
 
 ## Future development
@@ -27,3 +33,7 @@ The goal is to get all the Twitter tweets for a search result, going back as far
 So far the main script works okay, but it not getting all known tweets for a particular known so it needs improvement. The format can be improved - for now it is printing to stdout which can be redirected to a text file.
 
 Also, this could be improved for efficiency using a headless browser. It could also use a more modern library such as [requests-html](https://github.com/kennethreitz/requests-html).
+
+## License
+
+Released under [MIT](/LICENSE) by [@MichaelCurrin](https://github.com/MichaelCurrin).
