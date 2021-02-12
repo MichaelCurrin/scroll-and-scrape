@@ -15,8 +15,30 @@ This application uses Python and the browser (controlled through Selenium) to lo
 This project is aimed at scraping Tweets on a search, where scrolling is needed to load more. It could be used for a user timeline though.
 
 
-## Background
+## Installation
 
+Clone the repo.
+
+Install Python 3.
+
+Create a virtual environment and activate it.
+
+Install project packages.
+
+```sh
+$ pip install -r requirements.txt
+$ pip install -r requirements-dev.txt
+```
+
+
+## Usage
+
+```sh
+$ python scrollscrape
+```
+
+
+## Background
 
 This is a simple Python 3 application, based on existing scripts which are included in the [research](/research/) directory. See also [gist](https://gist.github.com/artjomb/07209e859f9bf0206f76).
 
