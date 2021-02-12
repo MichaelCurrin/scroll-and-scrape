@@ -15,6 +15,12 @@ This application uses Python and the browser (controlled through Selenium) to lo
 This project is aimed at scraping Tweets on a search, where scrolling is needed to load more. It could be used for a user timeline though.
 
 
+## Requirements
+
+- Python 3
+- Chrome
+
+
 ## Installation
 
 Clone the repo.
@@ -34,7 +40,8 @@ $ pip install -r requirements-dev.txt
 ## Usage
 
 ```sh
-$ python scrollscrape
+$ cd scrollscrape
+$ python main.py
 ```
 
 
@@ -45,11 +52,6 @@ This is a simple Python 3 application, based on existing scripts which are inclu
 The goal is to get all the Twitter tweets for a search query, going back as far as possible. 
 
 Using the Twitter API is restrictive - it only gives a week worth of data. Note that to keep this application simple, only the tweet ID needs to be stored and none of the tweet or author data. Since, once you have a tweet ID no matter how old, you can use the Twitter API to get all tweet and author data for a given tweet ID.
-
-
-## Requirements
-
-- Python
 
 
 ## Future development
