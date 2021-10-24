@@ -21,15 +21,20 @@ This project is aimed at scraping Tweets on a search, where scrolling is needed 
 - Chrome
 
 
-## Installation
+## Clone
 
-Clone the repo.
+```sh
+$ git clone git@github.com:MichaelCurrin/scroll-and-scrape.git
+$ cd scroll-and-scrape
+```
+
+## Installation
 
 Install Python 3.
 
 Create a virtual environment and activate it.
 
-Install project packages.
+Install project packages:
 
 ```sh
 $ pip install -r requirements.txt
