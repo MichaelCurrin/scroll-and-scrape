@@ -6,6 +6,7 @@
 
 [![Made with Python](https://img.shields.io/badge/Python->%3D3.6-blue?logo=python&logoColor=white)](https://python.org)
 [![dependency - selenium](https://img.shields.io/badge/dependency-selenium-blue)](https://pypi.org/project/selenium)
+[![dependency - beautifulsoup4](https://img.shields.io/badge/dependency-beautifulsoup4-blue)](https://pypi.org/project/beautifulsoup4)
 
 
 ## Purpose
@@ -17,8 +18,8 @@ This project is aimed at scraping Tweets on a search, where scrolling is needed 
 
 ## Requirements
 
-- Python 3
-- Chrome
+- [Python 3](https://python.org/)
+- Chrome browser
 
 
 ## Clone
@@ -27,6 +28,7 @@ This project is aimed at scraping Tweets on a search, where scrolling is needed 
 $ git clone git@github.com:MichaelCurrin/scroll-and-scrape.git
 $ cd scroll-and-scrape
 ```
+
 
 ## Installation
 
