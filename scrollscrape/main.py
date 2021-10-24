@@ -15,7 +15,7 @@ MAX_STOPS = 3
 
 def scroll(url):
     """
-    Scroll through HTML for given url.
+    Scroll through HTML page for given URL.
 
     Stop scrolling if height has not increased since last scroll.
     This might also mean that the connection has stopped and the script is
@@ -31,16 +31,18 @@ def scroll(url):
     current_height = BROWSER.execute_script("return document.body.scrollHeight")
 
     stops = 0
+    
     while True:
         BROWSER.execute_script("window.scrollTo(0, document.body.scrollHeight);")
         time.sleep(2)
+        
         new_height = BROWSER.execute_script("return document.body.scrollHeight")
+        
         if new_height == current_height:
             stops += 1
             if stops == MAX_STOPS:
                 break
-            else:
-                time.sleep(5)
+            time.sleep(5)
         else:
             current_height = new_height
             stops = 0
@@ -48,7 +50,7 @@ def scroll(url):
 
 def main():
     """
-    Main command-line function.
+    Command-line entry-point.
     """
     scroll(params.url)
 
@@ -60,7 +62,7 @@ def main():
         print(tweet_id, end=" ")
     print()
 
-    print("Count: {}".format(len(tweets)))
+    print(f"Count: {len(tweets)}"
     if tweet:
         tweet_time = tweet.find_element_by_class_name("_timestamp").text
         print("Oldest tweet: {}".format(tweet_time))
