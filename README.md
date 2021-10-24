@@ -4,7 +4,8 @@
 [![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/scroll-and-scrape?include_prereleases=&sort=semver)](https://github.com/MichaelCurrin/scroll-and-scrape/releases/)
 [![License](https://img.shields.io/badge/License-MIT-blue)](#license)
 
-[![Made with Python](https://img.shields.io/badge/Python->%3D3.6-blue?logo=python&logoColor=white)](https://python.org)
+[![Made with Python](https://img.shields.io/badge/Python->=3.6-blue?logo=python&logoColor=white)](https://python.org)
+[![Made for Twitter](https://img.shields.io/badge/Made_for-Twitter-blue?logo=twitter&logoColor=white)](https://twitter.com)
 [![dependency - selenium](https://img.shields.io/badge/dependency-selenium-blue)](https://pypi.org/project/selenium)
 [![dependency - beautifulsoup4](https://img.shields.io/badge/dependency-beautifulsoup4-blue)](https://pypi.org/project/beautifulsoup4)
 
