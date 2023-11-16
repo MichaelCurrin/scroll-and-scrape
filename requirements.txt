@@ -1,2 +1,2 @@
 beautifulsoup4~=4.7
-selenium~=3.141
+selenium~=4.15.1
